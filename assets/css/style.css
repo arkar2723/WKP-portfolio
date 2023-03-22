@@ -19,13 +19,37 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/wallpapersden.com_amazing-desert-hd-cool-aesthetic_1920x1080.jpg") top right no-repeat;
-  background-size: cover;
+  background: #040404;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+}
+#videobg{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+  #videobg{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-aspect-ratio: 16/9){
+  #videobg{
+    width: auto;
+    height: 100%;
+  }
+} */
+
+@media (max-width: 767px) {
+  #videbg{
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -672,6 +696,28 @@ section .container {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+.cv-button{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  background: #18d26e;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #fff;
+  
+}
+
+.cv-button:hover{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  background: #18d26e;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #fff;
+  
 }
 
 .resume .resume-item {
